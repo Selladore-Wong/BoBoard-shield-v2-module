@@ -13,24 +13,33 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        shifts2Caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <24 35>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P     &kp MINUS
-&kp PG_DN  &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&shift0    &kp Z  &kp X     &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp LCTRL  &mo 3  &kp LALT  &mo 1  &mo 2                &mo 1  &kp SPACE  &mo 2    &kp RGUI  &kp RALT
+&kp TAB     &kp Q  &kp W     &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P     &kp MINUS
+&kp PG_DN   &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT  &kp Z  &kp X     &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp LCTRL   &mo 3  &kp LALT  &mo 1  &mo 2                &mo 1  &kp SPACE  &mo 2    &kp RGUI  &kp RALT
             >;
         };
 
         layer1 {
             bindings = <
-&trans     &kp ESC   &kp SPACE  &kp UP    &kp RET    &trans  &kp N6     &kp N7     &kp N8    &kp N9    &kp N0    &kp BSLH
-&kp PG_UP  &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5    &kp GRAVE
-&trans     &kp END   &kp DEL    &trans    &kp BSPC   &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&trans     &trans    &trans     &trans    &trans                        &trans     &trans    &trans    &trans    &trans
+&trans     &kp ESC   &kp SPACE  &kp UP    &kp RET    &trans  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
+&kp PG_UP  &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5    &kp GRAVE
+&trans     &kp END   &kp DEL    &trans    &kp BSPC   &trans  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
+&trans     &trans    &trans     &trans    &trans                        &trans     &kp ENTER  &trans    &trans    &trans
             >;
         };
 
