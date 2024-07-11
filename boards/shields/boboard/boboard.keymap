@@ -28,7 +28,7 @@
         default_layer {
             bindings = <
 &kp TAB     &kp Q  &kp W     &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P     &kp MINUS
-&kp PG_DN   &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp CLCK    &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X     &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
 &kp LCTRL   &mo 3  &kp LALT  &mo 1  &mo 2                &mo 1  &kp SPACE  &mo 2    &kp RGUI  &kp RALT
             >;
@@ -36,19 +36,19 @@
 
         layer1 {
             bindings = <
-&trans     &kp ESC   &kp SPACE  &kp UP    &kp RET    &trans  &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp BSLH
-&kp PG_UP  &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &trans  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5    &kp GRAVE
-&trans     &kp END   &kp DEL    &trans    &kp BSPC   &trans  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &trans
-&trans     &trans    &trans     &trans    &trans                        &trans     &kp ENTER  &trans    &trans    &trans
+&kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP         &kp RET               &kp HASH          &kp AMPERSAND      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp CARET        &kp HOME  &kp LEFT   &kp DOWN       &kp RIGHT             &kp PLUS          &kp EQUAL          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LEFT_SHIFT   &kp END   &kp DEL    &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp STAR              &kp RIGHT_SHIFT
+&trans           &trans    &trans     &trans         &trans                                                     &kp PIPE         &kp KP_NUMBER_0  &kp KP_DOT       &trans                &trans
             >;
         };
 
         layer2 {
             bindings = <
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11        &kp F12  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR    &kp RPAR   &kp PIPE
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5         &kp F6   &kp EXCL   &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT  &kp TILDE
-&trans  &trans  &trans  &trans   &kp BACKSPACE  &trans   &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC    &kp PIPE   &trans
-&trans  &trans  &trans  &trans   &trans                             &trans    &trans    &trans      &trans     &trans
+&kp F1  &kp F2         &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11      &kp F12
+&trans  &kp PAGE_UP    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp TILDE    &kp GRAVE
+&trans  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp PERCENT  &trans
+&trans  &trans         &trans  &trans  &trans                  &trans  &trans  &trans   &trans       &trans
             >;
         };
 
