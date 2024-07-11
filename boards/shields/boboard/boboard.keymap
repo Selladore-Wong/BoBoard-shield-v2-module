@@ -36,10 +36,10 @@
 
         layer1 {
             bindings = <
-&kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP         &kp RET               &kp HASH          &kp AMPERSAND      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp CARET        &kp HOME  &kp LEFT   &kp DOWN       &kp RIGHT             &kp PLUS          &kp EQUAL          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT   &kp END   &kp DEL    &kp BACKSPACE  &kp NON_US_BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp STAR              &kp RIGHT_SHIFT
-&trans           &trans    &trans     &trans         &trans                                                     &kp PIPE         &kp KP_NUMBER_0  &kp KP_DOT       &trans                &trans
+&kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP        &kp RET        &kp HASH          &kp AMPERSAND      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp CARET        &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp PLUS          &kp EQUAL          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LEFT_SHIFT   &kp END   &kp DEL    &kp ASTERISK  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp KP_N1        &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH         &kp RIGHT_SHIFT
+&trans           &trans    &trans     &trans        &trans                                              &kp PIPE         &kp KP_NUMBER_0  &kp KP_DOT       &trans                &trans
             >;
         };
 
