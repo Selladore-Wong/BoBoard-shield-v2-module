@@ -37,7 +37,7 @@
         layer1 {
             bindings = <
 &kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP        &kp RET        &kp HASH          &kp AMPERSAND      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp CARET        &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp PLUS          &kp EQUAL          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp DLLR         &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp PLUS          &kp EQUAL          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp LEFT_SHIFT   &kp END   &kp DEL    &kp ASTERISK  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH         &kp RIGHT_SHIFT
 &trans           &trans    &trans     &trans        &trans                                              &kp PIPE      &kp NUMBER_0  &kp PERIOD    &trans                &trans
             >;
@@ -45,10 +45,10 @@
 
         layer2 {
             bindings = <
-&kp F1  &kp F2         &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10     &kp F11      &kp F12
-&trans  &kp PAGE_UP    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &kp TILDE    &kp GRAVE
-&trans  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOLLAR  &kp PERCENT  &trans
-&trans  &trans         &trans  &trans  &trans                  &trans  &trans  &trans      &trans       &trans
+&kp F1  &kp F2         &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &kp F11      &kp F12
+&trans  &kp PAGE_UP    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp CARET  &kp TILDE    &kp GRAVE
+&trans  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp PERCENT  &trans
+&trans  &trans         &trans  &trans  &trans                  &trans  &trans  &trans     &trans       &trans
             >;
         };
 
