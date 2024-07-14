@@ -11,6 +11,27 @@
             tapping-term-ms = <300>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
+
+        dnc_brace: dnc_brace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DNC_BRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+        };
+
+        dnc_bracket: dnc_bracket {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DNC_BRACKET";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+        };
+
+        dnc_parentheses: dnc_parentheses {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DNC_PARENTHESES";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
     };
 
     combos {
@@ -28,7 +49,7 @@
         default_layer {
             bindings = <
 &kp TAB     &kp Q  &kp W     &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I      &kp O    &kp P     &kp MINUS
-&kp CLCK    &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp EQUAL   &kp A  &kp S     &kp D  &kp F  &kp G  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X     &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
 &kp LCTRL   &mo 3  &kp LALT  &mo 1  &mo 2                &mo 1  &kp SPACE  &mo 2    &kp RGUI  &kp RALT
             >;
@@ -36,10 +57,10 @@
 
         layer1 {
             bindings = <
-&kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP        &kp RET        &kp HASH          &kp AMPERSAND      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp DLLR         &kp HOME  &kp LEFT   &kp DOWN      &kp RIGHT      &kp PLUS          &kp EQUAL          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT   &kp END   &kp DEL    &kp ASTERISK  &kp BACKSPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH         &kp RIGHT_SHIFT
-&trans           &trans    &trans     &trans        &trans                                              &kp PIPE      &kp NUMBER_0  &kp PERIOD    &trans                &trans
+&kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP         &kp RET        &kp PERCENT   &kp CARET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &dnc_brace        &kp GRAVE
+&kp DLLR         &kp HOME  &kp LEFT   &kp DOWN       &kp RIGHT      &kp HASH      &kp STAR   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &dnc_parentheses  &kp TILDE
+&kp LEFT_SHIFT   &kp END   &kp DEL    &kp AMPERSAND  &kp BACKSPACE  &dnc_bracket  &kp PIPE   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH     &kp RIGHT_SHIFT
+&trans           &trans    &trans     &trans         &trans                                  &trans        &kp NUMBER_0  &kp PERIOD    &trans            &trans
             >;
         };
 
