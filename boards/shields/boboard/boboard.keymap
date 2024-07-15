@@ -60,7 +60,7 @@
 &kp EXCLAMATION  &kp ESC   &kp SPACE  &kp UP         &kp RET        &kp PERCENT   &kp CARET  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &dnc_brace        &kp GRAVE
 &kp DLLR         &kp HOME  &kp LEFT   &kp DOWN       &kp RIGHT      &kp HASH      &kp STAR   &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &dnc_parentheses  &kp TILDE
 &kp LEFT_SHIFT   &kp END   &kp DEL    &kp AMPERSAND  &kp BACKSPACE  &dnc_bracket  &kp PIPE   &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH     &kp RIGHT_SHIFT
-&trans           &trans    &trans     &trans         &trans                                  &kp RIGHT_SHIFT  &kp NUMBER_0  &kp PERIOD    &trans            &trans
+&trans           &trans    &trans     &trans         &trans                                  &kp RIGHT_SHIFT  &kp NUMBER_0  &kp AT        &trans            &trans
             >;
         };
 
