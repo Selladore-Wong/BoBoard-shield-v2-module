@@ -52,8 +52,7 @@
             #binding-cells = <0>; // Must be 0
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
         };
-
-    }
+    };
 
     combos {
         compatible = "zmk,combos";
