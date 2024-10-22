@@ -16,23 +16,44 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_BRACE";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+            bindings = <&macro_brace>, <&kp RIGHT_BRACE>;
         };
 
         dnc_bracket: dnc_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_BRACKET";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+            bindings = <&macro_bracket>, <&kp RIGHT_BRACKET>;
         };
 
         dnc_parentheses: dnc_parentheses {
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_PARENTHESES";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&macro_parentheses>, <&kp RIGHT_PARENTHESIS>;
         };
     };
+
+    macros {
+        macro_parentheses: macro_parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT>;
+        };
+
+        macro_bracket: macro_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+        };
+
+        macro_brace: macro_brace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>; // Must be 0
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+        };
+
+    }
 
     combos {
         compatible = "zmk,combos";
