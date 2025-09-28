@@ -20,21 +20,22 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_BRACE";
             #binding-cells = <0>;
-            bindings = <&macro_brace>, <&kp RIGHT_BRACE>;
+            bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
 
         dnc_bracket: dnc_bracket {
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_BRACKET";
             #binding-cells = <0>;
-            bindings = <&macro_bracket>, <&kp RIGHT_BRACKET>;
+            bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
         dnc_parentheses: dnc_parentheses {
             compatible = "zmk,behavior-tap-dance";
             label = "DNC_PARENTHESES";
             #binding-cells = <0>;
-            bindings = <&macro_parentheses>, <&kp RIGHT_PARENTHESIS>;
+            #bindings = <&macro_parentheses>, <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
     };
 
